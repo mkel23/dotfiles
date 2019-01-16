@@ -1,0 +1,25 @@
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+
+alias bo="cd ~/Code/buildout"
+alias buildout="cd ~/Code/buildout"
+
+alias code="cd ~/Code"
+
+alias did="vim +'normal Go' +'r!date' ~/did.txt"
+
+alias e="vim ~/.zshrc"
+alias ea="vim ~/.aliases"
+alias ez="subl ~/.zshrc"
+alias eza="subl ~/.aliases"
+
+alias goto="bash ~/Code/bash/goto.sh"
+
+alias nah="git reset --hard && git clean -df"
+alias njqt="vim todo.txt -c 'split notes.txt' -c 'vsplit journal.txt' -c 'wincmd k' -c 'vsplit queue.txt'"
+
+alias sand="cd ~/Code/sandbox"
+alias sd="cat ~/Code/sandbox/slack-dark/solarized-theme.js >> /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js"
+
+alias todo="git diff -U0 | grep -i todo > /dev/null && echo 'There are still TODOs!' || echo 'Nothing TODO.'"
+alias todoe="git diff -U0 | grep -i todo"
+
