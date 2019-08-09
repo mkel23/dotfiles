@@ -13,6 +13,9 @@ alias ez="subl ~/.zshrc"
 alias eza="subl ~/.aliases"
 
 alias goto="bash ~/Code/bash/goto.sh"
+alias prod-patcher="bash ~/Code/bash/prod-patcher.sh"
+
+alias lc="colorls"
 
 alias nah="git reset --hard && git clean -df"
 alias njqt="vim todo.txt -c 'split notes.txt' -c 'vsplit journal.txt' -c 'wincmd k' -c 'vsplit queue.txt'"
@@ -20,6 +23,9 @@ alias njqt="vim todo.txt -c 'split notes.txt' -c 'vsplit journal.txt' -c 'wincmd
 alias sand="cd ~/Code/sandbox"
 alias sd="cat ~/Code/sandbox/slack-dark/solarized-theme.js >> /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js"
 
-alias todo="git diff -U0 | grep -i todo > /dev/null && echo 'There are still TODOs!' || echo 'Nothing TODO.'"
-alias todoe="git diff -U0 | grep -i todo"
+alias todo="git diff -U0 | grep -iE 'todo|fixme'"
+
+alias weather="curl wttr.in/Chicago"
+alias wip="git add -A && git commit -m WIP && git push -f && git reset HEAD^"
+alias wip-stash="git add -A && git commit -m WIP"
 
