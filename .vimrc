@@ -99,6 +99,8 @@ endif
 
 "------------- Mappings -------------"
 
+" New Mac's esc key sucks
+imap jj <Esc>
 " Make it easy to edit Vimrc file
 nmap <Leader>ev :tabe $MYVIMRC<cr>
 " Make it easy to edit plugins file
