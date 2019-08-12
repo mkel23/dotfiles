@@ -61,7 +61,7 @@ let g:grepper.simple_prompt = 1
 nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)
 nmap <leader>G :Grepper -cword -noprompt<CR>
-nmap <leader>g :GrepperAg
+nmap <leader>g :GrepperAg 
 
 
 
