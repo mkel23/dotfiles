@@ -26,7 +26,7 @@ nmap <leader>x :x<cr>
 nmap <leader>xa :xa<cr>
 " Reload file
 nmap <leader><leader>e :e!<cr>
-" nmap <leader><leader>c :%bd|tabe#<cr>
+nmap <leader><leader>c :%bd\|tabe#<cr>
 
 
 
@@ -107,6 +107,8 @@ nmap <Leader>ev :tabe $MYVIMRC<cr>
 nmap <Leader>ep :tabe ~/.vim/plugins.vim<cr>
 " Make it easy to edit snippet files
 nmap <Leader>es :tabe ~/.vim/snippets/
+" Make it easy to edit todo file
+nmap <Leader><Leader>t :tabe ~/todo.md<cr>
 
 map <Leader>bg :let &background = ( &background == "dark"? "light" : "dark" )<cr>
 nmap <Leader>a :A<cr>
