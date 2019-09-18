@@ -26,7 +26,7 @@ nmap <leader>x :x<cr>
 nmap <leader>xa :xa<cr>
 " Reload file
 nmap <leader><leader>e :e!<cr>
-nmap <leader><leader>c :%bd\|tabe#<cr>
+nmap <leader><leader>c :%bd\|e#<cr>
 
 
 
@@ -179,6 +179,10 @@ let g:rspec_command = 'call Send_to_Tmux("clear; rspec {spec}\n")'
 
 " vim-commentary
 " autocmd FileType markdown setlocal commentstring='<!-- %s -->'
+
+" dash
+nmap <leader>d :Dash<cr>
+let g:dash_activate = 0
 
 
 

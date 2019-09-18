@@ -36,6 +36,10 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'tmhedberg/matchit'
 
+if has('mac')
+  Plugin 'rizzatti/dash.vim'
+endif
+
 
 
 
