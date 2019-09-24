@@ -19,7 +19,6 @@ set softtabstop=2
 set shiftwidth=2
 
 " Fast saves
-cmap W w
 cmap w!! w !sudo tee % > /dev/null
 nmap <leader>w :w!<cr>
 nmap <leader>x :x<cr>
@@ -27,6 +26,9 @@ nmap <leader>xa :xa<cr>
 " Reload file
 nmap <leader><leader>e :e!<cr>
 nmap <leader><leader>c :%bd\|e#<cr>
+
+" Trying this out...
+noremap Q @q
 
 
 
