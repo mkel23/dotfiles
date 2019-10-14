@@ -4,8 +4,13 @@ so ~/.vim/plugins.vim
 
 set rtp+=/usr/local/bin/fzf
 
+set backupdir=~/.vimtmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vimtmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
 syntax enable
 set synmaxcol=225
+
+set encoding=UTF-8
 
 set backspace=indent,eol,start					" Make backspaces behave normally
 nnoremap <Space> <Nop>
@@ -29,7 +34,15 @@ nmap <leader><leader>c :%bd\|e#<cr>
 
 " Trying this out...
 noremap Q @q
+" nnoremap Q @@
+set lazyredraw
+" nnoremap Y y$
 
+" Enable undo files
+if version >= 703
+  set undofile
+  set undodir=~/.vimtmp,~/.tmp,~/tmp,/var/tmp,/tmp,c:\tmp
+endif
 
 
 
