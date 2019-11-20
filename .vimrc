@@ -15,9 +15,8 @@ set encoding=UTF-8
 set backspace=indent,eol,start					" Make backspaces behave normally
 nnoremap <Space> <Nop>
 let mapleader = ' '					        " Set default leader to space
-set number							" Activate line numbers
+set number relativenumber
 
-set tabstop=8
 set expandtab
 set smarttab
 set softtabstop=2
@@ -31,6 +30,8 @@ nmap <leader>xa :xa<cr>
 " Reload file
 nmap <leader><leader>e :e!<cr>
 nmap <leader><leader>c :%bd\|e#<cr>
+
+nmap <leader><leader>f IFIXME: <esc>gcc
 
 " Trying this out...
 noremap Q @q
@@ -199,6 +200,9 @@ let g:rspec_command = 'call Send_to_Tmux("clear; rspec {spec}\n")'
 nmap <leader>d :Dash<cr>
 let g:dash_activate = 0
 
+" vimwiki
+let g:vimwiki_list = [{'path': '~/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
+
 
 
 
@@ -210,4 +214,11 @@ augroup autosourcing
     autocmd!
     autocmd BufWritePost .vimrc source %
     autocmd BufWritePost plugins.vim source ~/.vimrc
+augroup END
+
+" FIXME: trying this out
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
 augroup END

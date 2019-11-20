@@ -35,6 +35,8 @@ Plugin 'neoclide/vim-jsx-improve'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'tmhedberg/matchit'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'vimwiki/vimwiki'
 
 if has('mac')
   Plugin 'rizzatti/dash.vim'

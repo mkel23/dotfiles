@@ -1,5 +1,7 @@
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
+alias be="bundle exec"
+
 alias code="cd ~/Code"
 
 alias did="vim +'normal Go' +'r!date' ~/did.txt"
