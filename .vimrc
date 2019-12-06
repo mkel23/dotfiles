@@ -191,7 +191,7 @@ let g:rails_projections = {
 \ }
 
 " vim-rspec
-let g:rspec_command = 'call Send_to_Tmux("clear; rspec {spec}\n")'
+let g:rspec_command = 'call Send_to_Tmux("clear; bundle exec rspec {spec}\n")'
 
 " vim-commentary
 " autocmd FileType markdown setlocal commentstring='<!-- %s -->'
