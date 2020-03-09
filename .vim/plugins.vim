@@ -37,6 +37,7 @@ Plugin 'jgdavey/tslime.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'vimwiki/vimwiki'
+Plugin 'rust-lang/rust.vim'
 
 if has('mac')
   Plugin 'rizzatti/dash.vim'
