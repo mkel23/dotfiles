@@ -22,6 +22,11 @@ set smarttab
 set softtabstop=2
 set shiftwidth=2
 
+set ignorecase
+set smartcase
+
+set hidden
+
 " Fast saves
 cmap w!! w !sudo tee % > /dev/null
 nmap <leader>w :w!<cr>
