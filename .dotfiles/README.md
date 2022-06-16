@@ -1,18 +1,18 @@
 # dotfiles
 
 ## Setup
-`alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"`
+`alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"`
 
 ```sh
 git init --bare $HOME/dotfiles
-config config --local status.showUntrackedFiles no
+dotfiles config --local status.showUntrackedFiles no
 ```
 
 ## Add new dotfile
 ```sh
-config add .vimrc
-config commit -m "Add .vimrc"
-config push
+dotfiles add .vimrc
+dotfiles commit -m "Add .vimrc"
+dotfiles push
 ```
 
 ## References
